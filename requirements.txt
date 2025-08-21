@@ -1,3 +1,2 @@
 Django==4.2.1
-pytz==2025.8
 django-bootstrap==4.0

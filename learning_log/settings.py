@@ -1,3 +1,4 @@
+import os
 """
 Django settings for learning_log project.
 
@@ -19,12 +20,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-=x_!ek_%1y8u@=az-0*$^x#%1$4-60k0$)6&)%$@-nql8x_waw'
+SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-=x_!ek_%1y8u@=az-0*$^x#%1$4-60k0$)6&)%$@-nql8x_waw')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['learning-log-5o9d.onrender.com']
 
 # Application definition
 
